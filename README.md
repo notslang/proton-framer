@@ -1,7 +1,7 @@
-# Proton Monokai
+# Proton Framer
 
-A monokai syntax theme for Atom to work with [Proton UI](https://atom.io/packages/proton).
+A syntax theme for Atom to work with [Proton Light UI](https://atom.io/packages/proton-light).
 
-Originally converted from [kevinsawicki](https://github.com/kevinsawicki)'s Monokai [port](https://github.com/kevinsawicki/monokai).
+The syntax was inspired by the code samples of [FramerJS](http://framerjs.com/).
 
-![Screenshot](http://cl.ly/image/2Y3v0S0V3Y04/Image%202014-05-14%20at%207.59.58%20AM.png)
+![Screenshot](http://cl.ly/image/1U422w3P3W3u/Screen%20Shot%202014-10-10%20at%209.47.38%20AM.png)
