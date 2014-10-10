@@ -1,0 +1,200 @@
+@import 'syntax-variables';
+
+.editor-colors {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+.editor {
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .gutter {
+    color: lighten(@syntax-text-color, 25%);
+    background-color: @syntax-background-color;
+
+    .cursor-line {
+      color: @syntax-text-color;
+    }
+  }
+
+  .line-number.cursor-line-no-selection {
+    background-color: none;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    border-color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: darken(@syntax-background-color, 5%);
+  }
+
+  .search-results .marker .region {
+    background-color: transparent;
+    border: 1px solid @syntax-result-marker-color;
+  }
+
+  .search-results .marker.current-result .region {
+    border: 1px solid @syntax-result-marker-color-selected;
+  }
+
+  .comment {
+    color: lighten(@syntax-text-color, 30%);
+  }
+
+  .string {
+    color: @syntax-color-slate-light;
+  }
+
+  .constant.numeric {
+    color: @syntax-color-blue;
+  }
+
+  .constant.language {
+    color: @syntax-color-blue;
+  }
+
+  .constant.character,
+  .constant.other {
+    color: @syntax-color-blue;
+  }
+
+  .keyword {
+    color: @syntax-color-slate;
+  }
+
+  .storage {
+    color: @syntax-color-blue;
+  }
+
+  .storage.type {
+    font-style: italic;
+    color: @syntax-color-blue;
+  }
+
+  .entity.name.class {
+    text-decoration: underline;
+    color: #9ae26a;
+  }
+
+  .entity.other.inherited-class {
+    font-style: italic;
+    text-decoration: underline;
+    color: #9ae26a;
+  }
+
+  .entity.name.function {
+    color: #9ae26a;
+  }
+
+  .entity.name.instance {
+    color: @syntax-color-orange;
+  }
+
+  .variable.parameter {
+    font-style: italic;
+    color: #FD971F;
+  }
+
+  .entity.name.tag {
+    color: @syntax-color-blue;
+  }
+
+  .entity.other.attribute-name {
+    color: #9ae26a;
+  }
+
+  .support.function {
+    color: @syntax-color-orange;
+  }
+
+  .support.constant {
+    color: @syntax-color-slate-light;
+  }
+
+  .support.type,
+  .support.class {
+    font-style: italic;
+    color: @syntax-color-orange;
+  }
+
+  .invalid {
+    color: #F8F8F0;
+    background-color: @syntax-color-orange;
+  }
+
+  .invalid.deprecated {
+    color: #F8F8F0;
+    background-color: @syntax-color-blue;
+  }
+
+  // Jade syntax
+  .class.jade {
+    color: @syntax-color-blue;
+  }
+
+  .gfm {
+    .markup {
+      &.heading {
+        color: @syntax-color-green;
+        font-weight: bold;
+      }
+
+      &.underline {
+        color: @syntax-color-green;
+        text-decoration: underline;
+      }
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .raw {
+      color: @syntax-color-orange;
+    }
+
+    .variable.list {
+      color: @syntax-color-orange;
+      font-weight: bold;
+    }
+
+    .link {
+      color: #CCC;
+
+      .entity {
+        color: @syntax-color-blue;
+      }
+    }
+  }
+}
+
+// Minimap Styling
+
+.with-minimap .vertical-scrollbar {
+  opacity: 0;
+  width: 0;
+}
+
+.minimap {
+  left: 93%;
+  width: 7%;
+}

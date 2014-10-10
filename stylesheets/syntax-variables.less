@@ -1,0 +1,33 @@
+// Custom colors
+@syntax-color-slate: #788D9E;
+@syntax-color-slate-light: #A4BDD1;
+@syntax-color-green: #6ED300;
+@syntax-color-orange: #FF9740;
+@syntax-color-blue: #5bc1f0;
+
+// General colors
+@syntax-text-color: @syntax-color-slate;
+@syntax-cursor-color: darken(@syntax-background-color, 35%);
+@syntax-background-color: #FCFCFD;
+@syntax-selection-color: #546373;
+
+// Guide colors
+@syntax-wrap-guide-color: rgba(255, 255, 255, .1);
+@syntax-indent-guide-color: rgba(255, 255, 255, .15);
+@syntax-invisible-character-color: rgba(197, 200, 198, .2);
+
+// For find and replace markers
+@syntax-result-marker-color: #888;
+@syntax-result-marker-color-selected: white;
+
+// Gutter colors
+@syntax-gutter-text-color: @syntax-text-color;
+@syntax-gutter-text-color-selected: @syntax-gutter-text-color;
+@syntax-gutter-background-color:darken(@syntax-background-color, 1%);
+@syntax-gutter-background-color-selected: @syntax-selection-color;
+
+// For git diff info. i.e. in the gutter
+@syntax-color-renamed: @syntax-color-blue;
+@syntax-color-added: @syntax-color-green;
+@syntax-color-modified: @syntax-color-blue;
+@syntax-color-removed: @syntax-color-orange;
