@@ -3,7 +3,7 @@
   "theme": "syntax",
   "version": "0.3.0",
   "private": false,
-  "description": "A syntax for the Proton Light UI theme based on FramerJS code samples.",
+  "description": "A Proton Light UI syntax theme inspired by Framer JS.",
   "repository": {
     "type": "git",
     "url": "https://github.com/jdsimcoe/proton-framer"
