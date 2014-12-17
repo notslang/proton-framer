@@ -1,9 +1,30 @@
-.editor .php {
+.editor[data-grammar~="php"] {
 
   .keyword {
-    &.namespace, &.use, &.use-as {
+    &.namespace, &.use, &.use-as, &.new {
       color: @syntax-color-blue;
+    }
+
+    &.operator.string {
+      color: @syntax-color-orange;
+    }
+
+    &.control {
+      color: @syntax-color-slate-light;
     }
   }
 
+  .constant {
+    &:not(.language) {
+      color: @syntax-color-slate;
+    }
+
+    &.numeric {
+      color: @syntax-color-slate-light;
+    }
+  }
+
+  .variable.global {
+    color: @syntax-color-blue;
+  }
 }
