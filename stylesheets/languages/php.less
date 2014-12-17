@@ -5,8 +5,11 @@
       color: @syntax-color-blue;
     }
 
-    &.operator.string {
-      color: @syntax-color-orange;
+    &.operator {
+      // dot operator
+      &.string {
+        color: @syntax-color-orange;
+      }
     }
 
     &.control {
@@ -26,5 +29,10 @@
 
   .variable.global {
     color: @syntax-color-blue;
+  }
+
+  .support.function, .meta.function-call {
+    color: darken(saturate(@syntax-color-slate-light, 10%), 15%);
+    /* color: lighten(@syntax-color-purple, 12%); */
   }
 }
