@@ -1,17 +1,19 @@
 {
   "name": "proton-framer",
   "theme": "syntax",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "private": false,
   "description": "A Proton Light UI syntax theme inspired by Framer JS.",
   "repository": {
     "type": "git",
     "url": "https://github.com/jdsimcoe/proton-framer"
   },
-  "contributors": [{
+  "contributors": [
+    {
       "name": "Adam Ellsworth",
       "email": "adam.d.ellsworth@gmail.com"
-  }],
+    }
+  ],
   "license": "MIT",
   "engines": {
     "atom": ">0.39.0"
