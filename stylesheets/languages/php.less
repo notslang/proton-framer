@@ -1,4 +1,4 @@
-.editor[data-grammar~="php"] {
+.editor[data-grammar~="php"], :host {
 
   .keyword {
     &.namespace, &.use, &.use-as, &.new {
@@ -32,7 +32,6 @@
   }
 
   .support.function, .meta.function-call {
-    color: darken(saturate(@syntax-color-slate-light, 10%), 15%);
-    /* color: lighten(@syntax-color-purple, 12%); */
+    color: @syntax-color-slate-light-saturated;
   }
 }

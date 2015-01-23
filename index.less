@@ -1,11 +1,11 @@
-@import 'syntax-variables';
+@import 'stylesheets/syntax-variables';
 
-.editor-colors {
-  background-color: @syntax-background-color;
-  color: @syntax-text-color;
+.editor-colors, :host {
+    background-color: @syntax-background-color;
+    color: @syntax-text-color;
 }
 
-.editor {
+.editor, :host {
   .invisible-character {
     color: @syntax-invisible-character-color;
   }
@@ -107,7 +107,7 @@
 
   .variable.parameter {
     font-style: italic;
-    color: #FD971F;
+    color: @syntax-color-orange;
   }
 
   .entity.name.tag {
@@ -185,7 +185,6 @@
       }
     }
   }
-
 }
 
 // Minimap Styling
@@ -202,8 +201,10 @@
 
 // Hide file-icons in tabs
 
-.pane ul.tab-bar li.tab .title:before {
+atom-pane ul.tab-bar li.tab .title:before {
   display: none;
 }
 
 @import './stylesheets/languages/php';
+@import './stylesheets/languages/js';
+@import './stylesheets/languages/mustache';
