@@ -1,7 +1,7 @@
 {
   "name": "proton-framer",
   "theme": "syntax",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "private": false,
   "description": "A Proton Light UI syntax theme inspired by Framer JS.",
   "repository": {
